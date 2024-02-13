@@ -112,6 +112,60 @@ const Dashboard = ({ children }) => {
                   <span>Add Referral</span>
                 </a>
               </li>
+              <li>
+                <a
+                  className='group flex items-center gap-3.5 rounded-lg px-2.5 py-2 font-medium text-white transition hover:bg-secondary hover:text-white'
+                  onClick={() => navigate('/schedule-callback')}
+                >
+                  <span className='text-secondary transition group-hover:text-white'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                      className='h-5 w-5'
+                    >
+                      <path d='M10 0a10 10 0 1 0 10 10A10.01 10.01 0 0 0 10 0Zm8.426 9.23h-2.322a6.163 6.163 0 0 0-5.335-5.334V1.574a8.474 8.474 0 0 1 7.657 7.657Zm-9.195 0H5.45a4.624 4.624 0 0 1 3.78-3.78v3.78Zm0 1.54v3.78a4.624 4.624 0 0 1-3.781-3.78h3.78Zm1.538 0h3.781a4.624 4.624 0 0 1-3.78 3.78v-3.78Zm0-1.54V5.45a4.624 4.624 0 0 1 3.781 3.78h-3.78ZM9.231 1.575v2.322a6.164 6.164 0 0 0-5.335 5.335H1.574a8.474 8.474 0 0 1 7.657-7.657ZM1.574 10.77h2.322a6.163 6.163 0 0 0 5.335 5.335v2.322a8.475 8.475 0 0 1-7.657-7.657Zm9.195 7.657v-2.322a6.163 6.163 0 0 0 5.335-5.335h2.322a8.474 8.474 0 0 1-7.657 7.657Z' />
+                    </svg>
+                  </span>
+                  <span>Schedule Callback</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className='group flex items-center gap-3.5 rounded-lg px-2.5 py-2 font-medium text-white transition hover:bg-secondary hover:text-white'
+                  onClick={() => navigate('/call-options')}
+                >
+                  <span className='text-secondary transition group-hover:text-white'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                      className='h-5 w-5'
+                    >
+                      <path d='M10 0a10 10 0 1 0 10 10A10.01 10.01 0 0 0 10 0Zm8.426 9.23h-2.322a6.163 6.163 0 0 0-5.335-5.334V1.574a8.474 8.474 0 0 1 7.657 7.657Zm-9.195 0H5.45a4.624 4.624 0 0 1 3.78-3.78v3.78Zm0 1.54v3.78a4.624 4.624 0 0 1-3.781-3.78h3.78Zm1.538 0h3.781a4.624 4.624 0 0 1-3.78 3.78v-3.78Zm0-1.54V5.45a4.624 4.624 0 0 1 3.781 3.78h-3.78ZM9.231 1.575v2.322a6.164 6.164 0 0 0-5.335 5.335H1.574a8.474 8.474 0 0 1 7.657-7.657ZM1.574 10.77h2.322a6.163 6.163 0 0 0 5.335 5.335v2.322a8.475 8.475 0 0 1-7.657-7.657Zm9.195 7.657v-2.322a6.163 6.163 0 0 0 5.335-5.335h2.322a8.474 8.474 0 0 1-7.657 7.657Z' />
+                    </svg>
+                  </span>
+                  <span>Call Options</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className='group flex items-center gap-3.5 rounded-lg px-2.5 py-2 font-medium text-white transition hover:bg-secondary hover:text-white'
+                  onClick={() => navigate('/send-email')}
+                >
+                  <span className='text-secondary transition group-hover:text-white'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                      className='h-5 w-5'
+                    >
+                      <path d='M10 0a10 10 0 1 0 10 10A10.01 10.01 0 0 0 10 0Zm8.426 9.23h-2.322a6.163 6.163 0 0 0-5.335-5.334V1.574a8.474 8.474 0 0 1 7.657 7.657Zm-9.195 0H5.45a4.624 4.624 0 0 1 3.78-3.78v3.78Zm0 1.54v3.78a4.624 4.624 0 0 1-3.781-3.78h3.78Zm1.538 0h3.781a4.624 4.624 0 0 1-3.78 3.78v-3.78Zm0-1.54V5.45a4.624 4.624 0 0 1 3.781 3.78h-3.78ZM9.231 1.575v2.322a6.164 6.164 0 0 0-5.335 5.335H1.574a8.474 8.474 0 0 1 7.657-7.657ZM1.574 10.77h2.322a6.163 6.163 0 0 0 5.335 5.335v2.322a8.475 8.475 0 0 1-7.657-7.657Zm9.195 7.657v-2.322a6.163 6.163 0 0 0 5.335-5.335h2.322a8.474 8.474 0 0 1-7.657 7.657Z' />
+                    </svg>
+                  </span>
+                  <span>Send Email</span>
+                </a>
+              </li>
             </ul>
 
             <div className='hidden lg:block'>

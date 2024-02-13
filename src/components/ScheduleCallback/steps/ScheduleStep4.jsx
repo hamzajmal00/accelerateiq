@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const ScheduleStep4 = () => {
+const ScheduleStep4 = ({ setLottie }) => {
+  useEffect(() => {
+    setLottie(true);
+  }, []);
+
   return (
     <div className='h-full max-h-[450px] overflow-y-auto overflow-x-hidden rounded-2xl bg-white/30 p-6 md:p-10 [&::-webkit-scrollbar-thumb]:bg-secondary/80 [&::-webkit-scrollbar-track]:bg-secondary/20 [&::-webkit-scrollbar]:w-2'>
       <div className='h-full min-h-[200px]'>

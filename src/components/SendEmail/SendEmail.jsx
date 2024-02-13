@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 import Dashboard from '../../pages/Dashboard';
 import Stepper from '../Common/Stepper';
-import ScheduleStep1 from './steps/ScheduleStep1';
-import ScheduleStep2 from './steps/ScheduleStep2';
-import ScheduleStep3 from './steps/ScheduleStep3';
-import ScheduleStep4 from './steps/ScheduleStep4';
-import * as LottiePlayer from '@lottiefiles/lottie-player';
-import ReactAudioPlayer from 'react-audio-player';
+import SendEmail1 from './steps/SendEmail1';
+import SendEmail2 from './steps/SendEmail2';
+import SendEmail3 from './steps/SendEmail3';
 
-const ScheduleCallback = () => {
+const SendEmail = () => {
   const [openEditContactPopup, setOpenEditContactPopup] = useState(false);
-  const [showLottie, setShowLottie] = useState(false);
 
   const steps = [
-    { title: 'Step 1', component: <ScheduleStep1 /> },
-    { title: 'Step 2', component: <ScheduleStep2 /> },
-    { title: 'Step 3', component: <ScheduleStep3 /> },
-    { title: 'Step 4', component: <ScheduleStep4 setLottie={setShowLottie} /> },
+    { title: 'Step 1', component: <SendEmail1 /> },
+    { title: 'Step 2', component: <SendEmail2 /> },
+    { title: 'Step 3', component: <SendEmail3 /> },
   ];
   return (
     <>
@@ -279,6 +274,7 @@ const ScheduleCallback = () => {
             <div className='mt-6 flex h-full flex-col justify-between gap-4'>
               <Stepper
                 steps={steps}
+                additionalBtnText='Yes, send the email.'
                 nextBtnText='Next'
                 isBackBtnShow={true}
                 finishBtnRoute='/call-options'
@@ -287,25 +283,6 @@ const ScheduleCallback = () => {
           </div>
         </div>
       </Dashboard>
-      {showLottie && (
-        <div class='pointer-events-none absolute inset-0 z-20'>
-          <lottie-player
-            autoplay
-            loop
-            mode='normal'
-            src='https://lottie.host/43ca7dd8-6b2c-4fae-b8cb-7b9a6e25c4e8/uqvEeg4Nc5.json'
-            // style='width: 320px'
-          >
-            {/* <audio src='/assets/audio/small_applause.mp3' autoplay></audio> */}
-
-            <ReactAudioPlayer
-              src='/assets/audio/small_applause.mp3'
-              autoPlay
-              controls
-            />
-          </lottie-player>
-        </div>
-      )}
       {/* Edit Contact Modal */}
       {openEditContactPopup && (
         <div
@@ -506,4 +483,4 @@ const ScheduleCallback = () => {
   );
 };
 
-export default ScheduleCallback;
+export default SendEmail;

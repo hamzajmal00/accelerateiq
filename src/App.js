@@ -12,6 +12,7 @@ import AddReferral from './components/AddReferral/AddReferral';
 import CallOptions from './components/CallOptions/CallOptions';
 import HangUp from './components/HangUp/HangUp';
 import ScheduleCallback from './components/ScheduleCallback/ScheduleCallback';
+import SendEmail from './components/SendEmail/SendEmail';
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route path='/call-options' element={<CallOptions />} />
         <Route path='/hung-up' element={<HangUp />} />
         <Route path='/schedule-callback' element={<ScheduleCallback />} />
+        <Route path='/send-email' element={<SendEmail />} />
       </Routes>
     </BrowserRouter>
   );
